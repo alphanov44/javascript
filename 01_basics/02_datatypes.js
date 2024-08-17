@@ -10,10 +10,10 @@ let isloggedin=false
 //undefined 
 //symbol = unique
 
-console.log(typeof age);
+// console.log(typeof age);
 
-console.log(typeof null) //object
-console.log(typeof undefined)//undefined
+// console.log(typeof null) //object
+// console.log(typeof undefined)//undefined
 
 /*
 Primitive Type
@@ -28,6 +28,37 @@ age: 20
 */
 const myfunction=function()
 {
-    console.log("Hello world");
+    //console.log("Hello world");
 }
-console.log(myfunction)
+
+
+//---------------------------------------------------------------------
+let myyoutubename="aditinandapurkardotcom"
+let anothername=myyoutubename
+anothername="chaipecharcha"
+
+console.log(myyoutubename);
+console.log(anothername);
+//primitive datatypes mdhe copy detat mhnun no changein original myyoutubename
+//IN STACK
+
+
+//nonprimitive
+let user1=
+{
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+let user2=user1
+user2.email="parthdukkarr"
+console.log(user1.email);//parthdukkar
+console.log(user2.email);//parthdukkar
+//in nonprimitive they refer to same object and no copy is created 
+//in HEAP  
+
+//---summary---
+//stack mein copy
+//heap mein reference
+
+
+
