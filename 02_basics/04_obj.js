@@ -72,9 +72,9 @@ console.log(courseInstructor);
 //this is known as object destructuring
 
 //json
-{
-    "name":"Aditi",
-    "coursename":"dsa",
-    "price":"free"
-}
+// {
+//     "name":"Aditi",
+//     "coursename":"dsa",
+//     "price":"free"
+// }
 
