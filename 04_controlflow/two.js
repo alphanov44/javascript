@@ -25,9 +25,8 @@ for(const [key,value] of map)
     console.log(key,":- ",value); 
 }
 
-
-
-
+//This for of loop doesnt work for objects
+//for objects we can use for in loop
 
 
 
