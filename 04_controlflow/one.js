@@ -38,7 +38,7 @@ console.log(val1);
 //Terniary operator
 //condition ? true : false
 
-
+                                                       t
 
 
 
