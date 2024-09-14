@@ -34,13 +34,37 @@
         console.log("images clicked");
     },false)
 
+    // document.getElementById('owl').addEventListener('click',function(e)
+    // {
+    //     console.log("owl clicked");
+    // },false) ----------- prints owl clicked and then images clicked ....this is bubbling to stop this we can use stop propogation
+
     document.getElementById('owl').addEventListener('click',function(e)
     {
-        console.log("owl clicked");
-    },false)
+         console.log("owl clicked");
+         e.stopPropagation();
+     },false)   //bcs of this only owl clicked is printed
 
     //type, timestamp, defaultPrevented
     //target, toElement, srcElement, currentTarget
     //clientX ,clientY, screenX, screenY
+
+     document.getElementById('google').addEventListener
+     ('click',function(e)
+     {
+        console.log("google clicked");
+        e.preventDefault();
+     },false
+     )
+
+     document.querySelector('#images').addEventListener
+     (
+        'click',function(e){
+            console.log(e.target.parentNode);
+            let removeit=e.target.parentNode
+            removeit.remove(); 
+        }
+     )
+
 </script>
 </html>
