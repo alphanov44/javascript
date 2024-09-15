@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai pe charcha</h1>
+    <button id="stop">STOP</button>
+ 
+</body>
+<script>
+    setTimeout(function()
+    {
+        console.log("Aditii");
+    },5000)
+    const changetext=function()
+    {
+        document.querySelector('h1').innerHTML="bestest"
+    }
+    const changeme = setTimeout(changetext,5000);
+    document.querySelector('#stop').addEventListener('click',function(){
+        console.log("STOPPED")
+    })
+</script>
+</html>
